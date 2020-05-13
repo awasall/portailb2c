@@ -1,0 +1,2968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.5 on win32)" generated="20200325 13:23:22.883" rpa="false">
+<suite id="s1" name="Automation B2C" source="C:\Developpement\RobotFramework\Portail\TestSuite\automation_b2c.robot">
+<test id="s1-t1" name="TA_1_Acceder_a_la_nouvelle_page_orangetmoi">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:23:23.330" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:23:23.329" endtime="20200325 13:23:25.863"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:23:25.864" endtime="20200325 13:23:27.027"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:23:23.329" endtime="20200325 13:23:27.027"></status>
+</kw>
+<kw name="Page d'accueil" library="webapp">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${preprod}</arg>
+</arguments>
+<msg timestamp="20200325 13:23:27.030" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/'</msg>
+<status status="PASS" starttime="20200325 13:23:27.030" endtime="20200325 13:24:12.910"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:23:27.029" endtime="20200325 13:24:12.911"></status>
+</kw>
+<kw name="Verification page chargee" library="webapp">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Orange Sénégal|Mobile, pass internet, Orange Money, ADSL Fibre | Portail Orange SN</arg>
+</arguments>
+<msg timestamp="20200325 13:24:12.936" level="INFO">Page title is 'Orange Sénégal|Mobile, pass internet, Orange Money, ADSL Fibre | Portail Orange SN'.</msg>
+<status status="PASS" starttime="20200325 13:24:12.913" endtime="20200325 13:24:12.936"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:12.912" endtime="20200325 13:24:12.936"></status>
+</kw>
+<kw name="Click boutton aller new webapp" library="webapp">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${bouton_pour_new_app}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:12.940" level="INFO">Clicking link 'xpath=/html/body/div[3]/header/div/nav/div[2]/a[3]'.</msg>
+<status status="PASS" starttime="20200325 13:24:12.940" endtime="20200325 13:24:13.225"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:12.940" endtime="20200325 13:24:13.225"></status>
+</kw>
+<kw name="verification nouvelle webapp accedee" library="webapp">
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>Selects browser window matching ``locator``.</doc>
+<arguments>
+<arg>title=Orange et Moi</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:24:13.227" endtime="20200325 13:24:22.698"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Orange et Moi</arg>
+</arguments>
+<msg timestamp="20200325 13:24:22.714" level="INFO">Page title is 'Orange et Moi'.</msg>
+<status status="PASS" starttime="20200325 13:24:22.698" endtime="20200325 13:24:22.714"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:13.226" endtime="20200325 13:24:22.714"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:24:22.714" endtime="20200325 13:24:25.271"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:22.714" endtime="20200325 13:24:25.271"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20200325 13:23:23.328" endtime="20200325 13:24:25.271" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TA_15_Deplafonner_un_compte_OM_depuis_le_portail">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:25.282" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:24:25.281" endtime="20200325 13:24:27.882"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:24:27.882" endtime="20200325 13:24:29.038"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:25.279" endtime="20200325 13:24:29.038"></status>
+</kw>
+<kw name="Saisie des info et upload des fichiers pour deplfonnement" library="deplafonnementOM">
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<arguments>
+<arg>epoch</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200325 13:24:29.038" level="INFO">${now} = 1585142669</msg>
+<status status="PASS" starttime="20200325 13:24:29.038" endtime="20200325 13:24:29.038"></status>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${OUTPUT DIR}</arg>
+<arg>downloads_${now}</arg>
+</arguments>
+<assign>
+<var>${download directory}</var>
+</assign>
+<msg timestamp="20200325 13:24:29.038" level="INFO">${download directory} = C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669</msg>
+<status status="PASS" starttime="20200325 13:24:29.038" endtime="20200325 13:24:29.038"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${download directory}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:29.038" level="INFO" html="yes">Created directory '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:24:29.038" endtime="20200325 13:24:29.038"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${chrome options}</var>
+</assign>
+<msg timestamp="20200325 13:24:29.038" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000014F4E1202E8&gt;</msg>
+<status status="PASS" starttime="20200325 13:24:29.038" endtime="20200325 13:24:29.038"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>Chrome PDF Viewer</arg>
+</arguments>
+<assign>
+<var>${disabled}</var>
+</assign>
+<msg timestamp="20200325 13:24:29.038" level="INFO">${disabled} = ['Chrome PDF Viewer']</msg>
+<status status="PASS" starttime="20200325 13:24:29.038" endtime="20200325 13:24:29.038"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>download.default_directory=${download directory}</arg>
+<arg>plugins.plugins_disabled=${disabled}</arg>
+</arguments>
+<assign>
+<var>${prefs}</var>
+</assign>
+<msg timestamp="20200325 13:24:29.038" level="INFO">${prefs} = {'download.default_directory': 'C:\\Developpement\\RobotFramework\\Portail\\Result\\downloads_1585142669', 'plugins.plugins_disabled': ['Chrome PDF Viewer']}</msg>
+<status status="PASS" starttime="20200325 13:24:29.038" endtime="20200325 13:24:29.038"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:24:29.038" endtime="20200325 13:24:29.038"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome options}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:29.038" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200325 13:24:29.038" endtime="20200325 13:24:31.508"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${download directory}/monfichier.png</arg>
+</arguments>
+<msg timestamp="20200325 13:24:31.509" level="INFO" html="yes">Created file '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669\monfichier.png"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669\monfichier.png&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:24:31.509" endtime="20200325 13:24:31.510"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${download directory}/monfichier.xlsx</arg>
+</arguments>
+<msg timestamp="20200325 13:24:31.511" level="INFO" html="yes">Created file '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669\monfichier.xlsx"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669\monfichier.xlsx&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:24:31.510" endtime="20200325 13:24:31.511"></status>
+</kw>
+<kw name="aller a la page de deplafonnement" library="deplafonnementOM">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${prepDeplaf}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:31.512" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/deplafonnement-orange-money'</msg>
+<status status="PASS" starttime="20200325 13:24:31.512" endtime="20200325 13:24:42.900"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:31.512" endtime="20200325 13:24:42.900"></status>
+</kw>
+<kw name="verifier qu'on est bien a la page de deplafonnement" library="deplafonnementOM">
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${urldep}</var>
+</assign>
+<msg timestamp="20200325 13:24:42.961" level="INFO">${urldep} = https://newportailb2c.orange-sonatel.com/deplafonnement-orange-money</msg>
+<status status="PASS" starttime="20200325 13:24:42.901" endtime="20200325 13:24:42.962"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${urldep}</arg>
+<arg>https://newportailb2c.orange-sonatel.com/deplafonnement-orange-money</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:24:42.962" endtime="20200325 13:24:42.962"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:42.901" endtime="20200325 13:24:42.962"></status>
+</kw>
+<kw name="telecharger le formulaire" library="common">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lien_telecharger_form}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:42.962" level="INFO">Clicking element 'xpath=//*[@id="block-orange-content"]/div[2]/div[2]/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20200325 13:24:42.962" endtime="20200325 13:24:43.109"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:42.962" endtime="20200325 13:24:43.109"></status>
+</kw>
+<kw name="remplir les champs" library="common">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=prenom</arg>
+<arg>Ousseynou</arg>
+</arguments>
+<msg timestamp="20200325 13:24:43.112" level="INFO">Typing text 'Ousseynou' into text field 'id=prenom'.</msg>
+<status status="PASS" starttime="20200325 13:24:43.111" endtime="20200325 13:24:43.379"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=nom</arg>
+<arg>Sane</arg>
+</arguments>
+<msg timestamp="20200325 13:24:43.379" level="INFO">Typing text 'Sane' into text field 'id=nom'.</msg>
+<status status="PASS" starttime="20200325 13:24:43.379" endtime="20200325 13:24:43.585"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=mail</arg>
+<arg>weusebaye@gmail.com</arg>
+</arguments>
+<msg timestamp="20200325 13:24:43.587" level="INFO">Typing text 'weusebaye@gmail.com' into text field 'id=mail'.</msg>
+<status status="PASS" starttime="20200325 13:24:43.586" endtime="20200325 13:24:43.993"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=numero</arg>
+<arg>ESC</arg>
+</arguments>
+<msg timestamp="20200325 13:24:43.995" level="INFO">Sending key(s) ('ESC',) to id=numero element.</msg>
+<msg timestamp="20200325 13:24:44.017" level="INFO">Pressing special key ESCAPE to element.</msg>
+<status status="PASS" starttime="20200325 13:24:43.994" endtime="20200325 13:24:44.514"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=numero</arg>
+<arg>774590750</arg>
+</arguments>
+<msg timestamp="20200325 13:24:44.515" level="INFO">Typing text '774590750' into text field 'id=numero'.</msg>
+<status status="PASS" starttime="20200325 13:24:44.514" endtime="20200325 13:24:44.943"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:43.110" endtime="20200325 13:24:44.943"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>id=form-signe</arg>
+<arg>${download directory}/formulaire_inscription_om_original.pdf</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200325 13:24:45.380" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200325 13:24:44.943" endtime="20200325 13:24:45.380"></status>
+</kw>
+<msg timestamp="20200325 13:24:45.385" level="FAIL">ValueError: File 'C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669/formulaire_inscription_om_original.pdf' does not exist on the local file system.</msg>
+<status status="FAIL" starttime="20200325 13:24:44.943" endtime="20200325 13:24:45.385"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:24:29.038" endtime="20200325 13:24:45.385"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:24:45.387" endtime="20200325 13:24:50.440"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:45.387" endtime="20200325 13:24:50.440"></status>
+</kw>
+<tags>
+<tag>TNR</tag>
+</tags>
+<status status="FAIL" starttime="20200325 13:24:25.277" endtime="20200325 13:24:50.441" critical="yes">ValueError: File 'C:\Developpement\RobotFramework\Portail\Result\downloads_1585142669/formulaire_inscription_om_original.pdf' does not exist on the local file system.</status>
+</test>
+<test id="s1-t3" name="TA_9_Creer_un_compte_OM_depuis_le_portail_cas_nominal">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:50.450" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:24:50.450" endtime="20200325 13:24:53.049"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:24:53.051" endtime="20200325 13:24:54.221"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:50.449" endtime="20200325 13:24:54.221"></status>
+</kw>
+<kw name="Saisie des info et upload des fichiers pour inscription" library="inscriptionOM">
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<arguments>
+<arg>epoch</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200325 13:24:54.221" level="INFO">${now} = 1585142694</msg>
+<status status="PASS" starttime="20200325 13:24:54.221" endtime="20200325 13:24:54.221"></status>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${OUTPUT DIR}</arg>
+<arg>downloads_${now}</arg>
+</arguments>
+<assign>
+<var>${download directory}</var>
+</assign>
+<msg timestamp="20200325 13:24:54.221" level="INFO">${download directory} = C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694</msg>
+<status status="PASS" starttime="20200325 13:24:54.221" endtime="20200325 13:24:54.221"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${download directory}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:54.230" level="INFO" html="yes">Created directory '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:24:54.221" endtime="20200325 13:24:54.231"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${chrome options}</var>
+</assign>
+<msg timestamp="20200325 13:24:54.231" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000014F4E130518&gt;</msg>
+<status status="PASS" starttime="20200325 13:24:54.231" endtime="20200325 13:24:54.231"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>Chrome PDF Viewer</arg>
+</arguments>
+<assign>
+<var>${disabled}</var>
+</assign>
+<msg timestamp="20200325 13:24:54.231" level="INFO">${disabled} = ['Chrome PDF Viewer']</msg>
+<status status="PASS" starttime="20200325 13:24:54.231" endtime="20200325 13:24:54.231"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>download.default_directory=${download directory}</arg>
+<arg>plugins.plugins_disabled=${disabled}</arg>
+</arguments>
+<assign>
+<var>${prefs}</var>
+</assign>
+<msg timestamp="20200325 13:24:54.231" level="INFO">${prefs} = {'download.default_directory': 'C:\\Developpement\\RobotFramework\\Portail\\Result\\downloads_1585142694', 'plugins.plugins_disabled': ['Chrome PDF Viewer']}</msg>
+<status status="PASS" starttime="20200325 13:24:54.231" endtime="20200325 13:24:54.231"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:24:54.231" endtime="20200325 13:24:54.231"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome options}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:54.231" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200325 13:24:54.231" endtime="20200325 13:24:56.756"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${download directory}/monfichier.png</arg>
+</arguments>
+<msg timestamp="20200325 13:24:56.760" level="INFO" html="yes">Created file '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694\monfichier.png"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694\monfichier.png&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:24:56.757" endtime="20200325 13:24:56.761"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${download directory}/monfichier.xlsx</arg>
+</arguments>
+<msg timestamp="20200325 13:24:56.765" level="INFO" html="yes">Created file '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694\monfichier.xlsx"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694\monfichier.xlsx&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:24:56.761" endtime="20200325 13:24:56.766"></status>
+</kw>
+<kw name="aller a la page inscription" library="inscriptionOM">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${prepCreerCompte}</arg>
+</arguments>
+<msg timestamp="20200325 13:24:56.767" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/formulaire-orange-money'</msg>
+<status status="PASS" starttime="20200325 13:24:56.767" endtime="20200325 13:25:28.769"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:24:56.766" endtime="20200325 13:25:28.769"></status>
+</kw>
+<kw name="verifier qu'on est bien a la page d'inscription" library="inscriptionOM">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200325 13:25:31.779" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200325 13:25:28.773" endtime="20200325 13:25:31.779"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${urlins}</var>
+</assign>
+<msg timestamp="20200325 13:25:31.799" level="INFO">${urlins} = https://newportailb2c.orange-sonatel.com/formulaire-orange-money</msg>
+<status status="PASS" starttime="20200325 13:25:31.780" endtime="20200325 13:25:31.799"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${urlins}</arg>
+<arg>https://newportailb2c.orange-sonatel.com/formulaire-orange-money</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:25:31.803" endtime="20200325 13:25:31.804"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:25:28.772" endtime="20200325 13:25:31.804"></status>
+</kw>
+<kw name="telecharger le formulaire" library="common">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lien_telecharger_form}</arg>
+</arguments>
+<msg timestamp="20200325 13:25:31.804" level="INFO">Clicking element 'xpath=//*[@id="block-orange-content"]/div[2]/div[2]/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20200325 13:25:31.804" endtime="20200325 13:25:32.012"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:25:31.804" endtime="20200325 13:25:32.012"></status>
+</kw>
+<kw name="remplir les champs" library="common">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=prenom</arg>
+<arg>Ousseynou</arg>
+</arguments>
+<msg timestamp="20200325 13:25:32.014" level="INFO">Typing text 'Ousseynou' into text field 'id=prenom'.</msg>
+<status status="PASS" starttime="20200325 13:25:32.013" endtime="20200325 13:25:32.270"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=nom</arg>
+<arg>Sane</arg>
+</arguments>
+<msg timestamp="20200325 13:25:32.271" level="INFO">Typing text 'Sane' into text field 'id=nom'.</msg>
+<status status="PASS" starttime="20200325 13:25:32.270" endtime="20200325 13:25:32.473"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=mail</arg>
+<arg>weusebaye@gmail.com</arg>
+</arguments>
+<msg timestamp="20200325 13:25:32.473" level="INFO">Typing text 'weusebaye@gmail.com' into text field 'id=mail'.</msg>
+<status status="PASS" starttime="20200325 13:25:32.473" endtime="20200325 13:25:32.874"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=numero</arg>
+<arg>ESC</arg>
+</arguments>
+<msg timestamp="20200325 13:25:32.877" level="INFO">Sending key(s) ('ESC',) to id=numero element.</msg>
+<msg timestamp="20200325 13:25:32.901" level="INFO">Pressing special key ESCAPE to element.</msg>
+<status status="PASS" starttime="20200325 13:25:32.875" endtime="20200325 13:25:33.249"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=numero</arg>
+<arg>774590750</arg>
+</arguments>
+<msg timestamp="20200325 13:25:33.250" level="INFO">Typing text '774590750' into text field 'id=numero'.</msg>
+<status status="PASS" starttime="20200325 13:25:33.249" endtime="20200325 13:25:33.433"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:25:32.013" endtime="20200325 13:25:33.433"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>id=form-signe</arg>
+<arg>${download directory}/formulaire_inscription_om_original.pdf</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200325 13:25:33.821" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200325 13:25:33.433" endtime="20200325 13:25:33.821"></status>
+</kw>
+<msg timestamp="20200325 13:25:33.822" level="FAIL">ValueError: File 'C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694/formulaire_inscription_om_original.pdf' does not exist on the local file system.</msg>
+<status status="FAIL" starttime="20200325 13:25:33.433" endtime="20200325 13:25:33.822"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:24:54.221" endtime="20200325 13:25:33.822"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:25:33.824" endtime="20200325 13:25:38.725"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:25:33.823" endtime="20200325 13:25:38.726"></status>
+</kw>
+<tags>
+<tag>TNR</tag>
+</tags>
+<status status="FAIL" starttime="20200325 13:24:50.446" endtime="20200325 13:25:38.727" critical="yes">ValueError: File 'C:\Developpement\RobotFramework\Portail\Result\downloads_1585142694/formulaire_inscription_om_original.pdf' does not exist on the local file system.</status>
+</test>
+<test id="s1-t4" name="TA_10_Creer_compte_OM_avec_tous_les_champs_obligatoires_a_vide">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:25:38.735" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:25:38.735" endtime="20200325 13:25:41.397"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:25:41.398" endtime="20200325 13:25:42.543"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:25:38.735" endtime="20200325 13:25:42.543"></status>
+</kw>
+<kw name="aller a la page inscription" library="inscriptionOM">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${prepCreerCompte}</arg>
+</arguments>
+<msg timestamp="20200325 13:25:42.543" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/formulaire-orange-money'</msg>
+<status status="PASS" starttime="20200325 13:25:42.543" endtime="20200325 13:26:01.718"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:25:42.543" endtime="20200325 13:26:01.718"></status>
+</kw>
+<kw name="verifier qu'on est bien a la page d'inscription" library="inscriptionOM">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200325 13:26:04.727" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200325 13:26:01.723" endtime="20200325 13:26:04.727"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${urlins}</var>
+</assign>
+<msg timestamp="20200325 13:26:04.751" level="INFO">${urlins} = https://newportailb2c.orange-sonatel.com/formulaire-orange-money</msg>
+<status status="PASS" starttime="20200325 13:26:04.728" endtime="20200325 13:26:04.751"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${urlins}</arg>
+<arg>https://newportailb2c.orange-sonatel.com/formulaire-orange-money</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:26:04.751" endtime="20200325 13:26:04.751"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:01.718" endtime="20200325 13:26:04.751"></status>
+</kw>
+<kw name="valider l'inscription sans reiseigner les champs obligatoires" library="inscriptionOM">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${bouton_envoyer_formulaire}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:04.751" level="INFO">Clicking button 'id=submit'.</msg>
+<status status="PASS" starttime="20200325 13:26:04.751" endtime="20200325 13:26:05.075"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:04.751" endtime="20200325 13:26:05.075"></status>
+</kw>
+<kw name="Verifier presence mesage d'erreurs" library="inscriptionOM">
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns value of ``attribute`` from element ``locator``.</doc>
+<arguments>
+<arg>id=prenom</arg>
+<arg>validationMessage</arg>
+</arguments>
+<assign>
+<var>${msgValidator}</var>
+</assign>
+<msg timestamp="20200325 13:26:05.131" level="INFO">${msgValidator} = Veuillez renseigner ce champ.</msg>
+<status status="PASS" starttime="20200325 13:26:05.079" endtime="20200325 13:26:05.131"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${msgValidator}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:05.132" level="INFO">Veuillez renseigner ce champ.</msg>
+<status status="PASS" starttime="20200325 13:26:05.131" endtime="20200325 13:26:05.132"></status>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<doc>Verifies that the given item is not empty.</doc>
+<arguments>
+<arg>${msgValidator}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:05.132" level="INFO">Length is 29</msg>
+<status status="PASS" starttime="20200325 13:26:05.132" endtime="20200325 13:26:05.132"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:05.076" endtime="20200325 13:26:05.132"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:26:05.132" endtime="20200325 13:26:07.576"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:05.132" endtime="20200325 13:26:07.576"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:25:38.734" endtime="20200325 13:26:07.576" critical="yes"></status>
+</test>
+<test id="s1-t5" name="TA_11_Creer_compte_OM_depuis_portail_avec_format_de_fichier_non_autorise">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:07.581" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:26:07.581" endtime="20200325 13:26:10.203"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:26:10.204" endtime="20200325 13:26:11.364"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:07.581" endtime="20200325 13:26:11.364"></status>
+</kw>
+<kw name="Saisie des info et upload des fichiers pour inscription badfile" library="inscriptionOM">
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<arguments>
+<arg>epoch</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200325 13:26:11.364" level="INFO">${now} = 1585142771</msg>
+<status status="PASS" starttime="20200325 13:26:11.364" endtime="20200325 13:26:11.364"></status>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${OUTPUT DIR}</arg>
+<arg>downloads_${now}</arg>
+</arguments>
+<assign>
+<var>${download directory}</var>
+</assign>
+<msg timestamp="20200325 13:26:11.364" level="INFO">${download directory} = C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771</msg>
+<status status="PASS" starttime="20200325 13:26:11.364" endtime="20200325 13:26:11.364"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${download directory}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:11.364" level="INFO" html="yes">Created directory '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:26:11.364" endtime="20200325 13:26:11.364"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${chrome options}</var>
+</assign>
+<msg timestamp="20200325 13:26:11.364" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000014F4E16DF60&gt;</msg>
+<status status="PASS" starttime="20200325 13:26:11.364" endtime="20200325 13:26:11.364"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>Chrome PDF Viewer</arg>
+</arguments>
+<assign>
+<var>${disabled}</var>
+</assign>
+<msg timestamp="20200325 13:26:11.364" level="INFO">${disabled} = ['Chrome PDF Viewer']</msg>
+<status status="PASS" starttime="20200325 13:26:11.364" endtime="20200325 13:26:11.364"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>download.default_directory=${download directory}</arg>
+<arg>plugins.plugins_disabled=${disabled}</arg>
+</arguments>
+<assign>
+<var>${prefs}</var>
+</assign>
+<msg timestamp="20200325 13:26:11.364" level="INFO">${prefs} = {'download.default_directory': 'C:\\Developpement\\RobotFramework\\Portail\\Result\\downloads_1585142771', 'plugins.plugins_disabled': ['Chrome PDF Viewer']}</msg>
+<status status="PASS" starttime="20200325 13:26:11.364" endtime="20200325 13:26:11.364"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:26:11.364" endtime="20200325 13:26:11.364"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome options}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:11.364" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200325 13:26:11.364" endtime="20200325 13:26:13.833"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${download directory}/monfichier.png</arg>
+</arguments>
+<msg timestamp="20200325 13:26:13.839" level="INFO" html="yes">Created file '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771\monfichier.png"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771\monfichier.png&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:26:13.833" endtime="20200325 13:26:13.839"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${download directory}/monfichier.xlsx</arg>
+</arguments>
+<msg timestamp="20200325 13:26:13.843" level="INFO" html="yes">Created file '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771\monfichier.xlsx"&gt;C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771\monfichier.xlsx&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:26:13.839" endtime="20200325 13:26:13.843"></status>
+</kw>
+<kw name="aller a la page inscription" library="inscriptionOM">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${prepCreerCompte}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:13.844" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/formulaire-orange-money'</msg>
+<status status="PASS" starttime="20200325 13:26:13.844" endtime="20200325 13:26:31.625"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:13.843" endtime="20200325 13:26:31.626"></status>
+</kw>
+<kw name="verifier qu'on est bien a la page d'inscription" library="inscriptionOM">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200325 13:26:34.636" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200325 13:26:31.627" endtime="20200325 13:26:34.636"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${urlins}</var>
+</assign>
+<msg timestamp="20200325 13:26:34.649" level="INFO">${urlins} = https://newportailb2c.orange-sonatel.com/formulaire-orange-money</msg>
+<status status="PASS" starttime="20200325 13:26:34.636" endtime="20200325 13:26:34.650"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${urlins}</arg>
+<arg>https://newportailb2c.orange-sonatel.com/formulaire-orange-money</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:26:34.650" endtime="20200325 13:26:34.650"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:31.626" endtime="20200325 13:26:34.650"></status>
+</kw>
+<kw name="telecharger le formulaire" library="common">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lien_telecharger_form}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:34.650" level="INFO">Clicking element 'xpath=//*[@id="block-orange-content"]/div[2]/div[2]/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20200325 13:26:34.650" endtime="20200325 13:26:34.828"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:34.650" endtime="20200325 13:26:34.828"></status>
+</kw>
+<kw name="remplir les champs" library="common">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=prenom</arg>
+<arg>Ousseynou</arg>
+</arguments>
+<msg timestamp="20200325 13:26:34.829" level="INFO">Typing text 'Ousseynou' into text field 'id=prenom'.</msg>
+<status status="PASS" starttime="20200325 13:26:34.829" endtime="20200325 13:26:35.106"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=nom</arg>
+<arg>Sane</arg>
+</arguments>
+<msg timestamp="20200325 13:26:35.107" level="INFO">Typing text 'Sane' into text field 'id=nom'.</msg>
+<status status="PASS" starttime="20200325 13:26:35.107" endtime="20200325 13:26:35.308"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=mail</arg>
+<arg>weusebaye@gmail.com</arg>
+</arguments>
+<msg timestamp="20200325 13:26:35.308" level="INFO">Typing text 'weusebaye@gmail.com' into text field 'id=mail'.</msg>
+<status status="PASS" starttime="20200325 13:26:35.308" endtime="20200325 13:26:35.614"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=numero</arg>
+<arg>ESC</arg>
+</arguments>
+<msg timestamp="20200325 13:26:35.616" level="INFO">Sending key(s) ('ESC',) to id=numero element.</msg>
+<msg timestamp="20200325 13:26:35.641" level="INFO">Pressing special key ESCAPE to element.</msg>
+<status status="PASS" starttime="20200325 13:26:35.615" endtime="20200325 13:26:35.991"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=numero</arg>
+<arg>774590750</arg>
+</arguments>
+<msg timestamp="20200325 13:26:35.991" level="INFO">Typing text '774590750' into text field 'id=numero'.</msg>
+<status status="PASS" starttime="20200325 13:26:35.991" endtime="20200325 13:26:36.186"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:34.828" endtime="20200325 13:26:36.186"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>id=form-signe</arg>
+<arg>${download directory}/formulaire_inscription_om_original.pdf</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200325 13:26:36.590" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200325 13:26:36.186" endtime="20200325 13:26:36.591"></status>
+</kw>
+<msg timestamp="20200325 13:26:36.592" level="FAIL">ValueError: File 'C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771/formulaire_inscription_om_original.pdf' does not exist on the local file system.</msg>
+<status status="FAIL" starttime="20200325 13:26:36.186" endtime="20200325 13:26:36.592"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:26:11.364" endtime="20200325 13:26:36.592"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:26:36.595" endtime="20200325 13:26:41.509"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:36.594" endtime="20200325 13:26:41.510"></status>
+</kw>
+<tags>
+<tag>TNR</tag>
+</tags>
+<status status="FAIL" starttime="20200325 13:26:07.580" endtime="20200325 13:26:41.510" critical="yes">ValueError: File 'C:\Developpement\RobotFramework\Portail\Result\downloads_1585142771/formulaire_inscription_om_original.pdf' does not exist on the local file system.</status>
+</test>
+<test id="s1-t6" name="TA_2_Partager_l_actu_a_ma_connaissance">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:41.514" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:26:41.514" endtime="20200325 13:26:44.043"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:26:44.044" endtime="20200325 13:26:45.200"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:41.514" endtime="20200325 13:26:45.201"></status>
+</kw>
+<kw name="Aller a la Rubrique en ce moment chez Orange" library="actu_guide">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${prod}</arg>
+</arguments>
+<msg timestamp="20200325 13:26:45.201" level="INFO">Opening url 'https://www.orange.sn/'</msg>
+<status status="PASS" starttime="20200325 13:26:45.201" endtime="20200325 13:27:11.580"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:45.201" endtime="20200325 13:27:11.580"></status>
+</kw>
+<kw name="Verifier Page détails de l'offre" library="actu_guide">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>En ce moment chez Orange</arg>
+</arguments>
+<msg timestamp="20200325 13:27:11.616" level="INFO">Current page contains text 'En ce moment chez Orange'.</msg>
+<status status="PASS" starttime="20200325 13:27:11.581" endtime="20200325 13:27:11.616"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:11.581" endtime="20200325 13:27:11.616"></status>
+</kw>
+<kw name="Aller a la Rubrique Partager avec vos amis sur" library="actu_guide">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lien_partager_avec_vos_amis}</arg>
+</arguments>
+<msg timestamp="20200325 13:27:11.619" level="INFO">Clicking element 'xpath=/html/body/div[3]/div[2]/div[3]/div[1]/div[1]/a'.</msg>
+<status status="PASS" starttime="20200325 13:27:11.618" endtime="20200325 13:27:12.768"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:11.618" endtime="20200325 13:27:12.768"></status>
+</kw>
+<kw name="Verifier Page rubrique partager avec vos amis" library="actu_guide">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Descriptif</arg>
+</arguments>
+<msg timestamp="20200325 13:27:18.599" level="INFO">Current page contains text 'Descriptif'.</msg>
+<status status="PASS" starttime="20200325 13:27:12.770" endtime="20200325 13:27:18.599"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Partager avec vos amis sur</arg>
+</arguments>
+<msg timestamp="20200325 13:27:19.324" level="INFO">Current page contains text 'Partager avec vos amis sur'.</msg>
+<status status="PASS" starttime="20200325 13:27:18.599" endtime="20200325 13:27:19.324"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:12.769" endtime="20200325 13:27:19.325"></status>
+</kw>
+<kw name="Selection d'un RS et verification de la redirection vers ce RS pour partage" library="actu_guide">
+<kw name="${i} IN [ Facebook | Twitter | Linkedin ]" type="for">
+<kw name="${i} = Facebook" type="foritem">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Facebook'</arg>
+<arg>Click link</arg>
+<arg>${facebook_link}</arg>
+</arguments>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${facebook_link}</arg>
+</arguments>
+<msg timestamp="20200325 13:27:19.327" level="INFO">Clicking link 'xpath=//*[@id="block-orange-content"]/section[3]/div[1]/p/span/a[1]'.</msg>
+<status status="PASS" starttime="20200325 13:27:19.327" endtime="20200325 13:27:19.689"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:19.326" endtime="20200325 13:27:19.689"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:27:21.696" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:19.689" endtime="20200325 13:27:21.697"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Facebook</arg>
+</arguments>
+<msg timestamp="20200325 13:27:44.109" level="INFO">Current page contains text 'Facebook'.</msg>
+<status status="PASS" starttime="20200325 13:27:21.697" endtime="20200325 13:27:44.111"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Twitter'</arg>
+<arg>Click link</arg>
+<arg>${twitter_link}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:27:44.111" endtime="20200325 13:27:44.112"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:27:46.119" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:44.113" endtime="20200325 13:27:46.119"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Twitter</arg>
+</arguments>
+<msg timestamp="20200325 13:27:46.181" level="INFO">Current page contains text 'Twitter'.</msg>
+<status status="PASS" starttime="20200325 13:27:46.119" endtime="20200325 13:27:46.181"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Linkedin'</arg>
+<arg>Click link</arg>
+<arg>${linkedin_link}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:27:46.181" endtime="20200325 13:27:46.182"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:27:48.196" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:46.182" endtime="20200325 13:27:48.197"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>LinkedIn</arg>
+</arguments>
+<msg timestamp="20200325 13:27:48.225" level="INFO">Current page contains text 'LinkedIn'.</msg>
+<status status="PASS" starttime="20200325 13:27:48.197" endtime="20200325 13:27:48.225"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:19.326" endtime="20200325 13:27:48.225"></status>
+</kw>
+<kw name="${i} = Twitter" type="foritem">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Facebook'</arg>
+<arg>Click link</arg>
+<arg>${facebook_link}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:27:48.225" endtime="20200325 13:27:48.225"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:27:50.226" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:48.225" endtime="20200325 13:27:50.226"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Facebook</arg>
+</arguments>
+<msg timestamp="20200325 13:27:50.257" level="INFO">Current page contains text 'Facebook'.</msg>
+<status status="PASS" starttime="20200325 13:27:50.226" endtime="20200325 13:27:50.258"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Twitter'</arg>
+<arg>Click link</arg>
+<arg>${twitter_link}</arg>
+</arguments>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${twitter_link}</arg>
+</arguments>
+<msg timestamp="20200325 13:27:50.259" level="INFO">Clicking link 'xpath=//*[@id="block-orange-content"]/section[3]/div[1]/p/span/a[2]'.</msg>
+<status status="PASS" starttime="20200325 13:27:50.259" endtime="20200325 13:27:50.519"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:50.258" endtime="20200325 13:27:50.520"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:27:52.523" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:50.520" endtime="20200325 13:27:52.523"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Twitter</arg>
+</arguments>
+<msg timestamp="20200325 13:27:52.585" level="INFO">Current page contains text 'Twitter'.</msg>
+<status status="PASS" starttime="20200325 13:27:52.523" endtime="20200325 13:27:52.585"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Linkedin'</arg>
+<arg>Click link</arg>
+<arg>${linkedin_link}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:27:52.586" endtime="20200325 13:27:52.586"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:27:54.596" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:52.586" endtime="20200325 13:27:54.598"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>LinkedIn</arg>
+</arguments>
+<msg timestamp="20200325 13:27:54.652" level="INFO">Current page contains text 'LinkedIn'.</msg>
+<status status="PASS" starttime="20200325 13:27:54.598" endtime="20200325 13:27:54.652"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:48.225" endtime="20200325 13:27:54.652"></status>
+</kw>
+<kw name="${i} = Linkedin" type="foritem">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Facebook'</arg>
+<arg>Click link</arg>
+<arg>${facebook_link}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:27:54.652" endtime="20200325 13:27:54.652"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:27:56.664" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:54.652" endtime="20200325 13:27:56.665"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Facebook</arg>
+</arguments>
+<msg timestamp="20200325 13:27:56.709" level="INFO">Current page contains text 'Facebook'.</msg>
+<status status="PASS" starttime="20200325 13:27:56.665" endtime="20200325 13:27:56.709"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Twitter'</arg>
+<arg>Click link</arg>
+<arg>${twitter_link}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:27:56.710" endtime="20200325 13:27:56.710"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:27:58.713" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:56.710" endtime="20200325 13:27:58.714"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Twitter</arg>
+</arguments>
+<msg timestamp="20200325 13:27:58.778" level="INFO">Current page contains text 'Twitter'.</msg>
+<status status="PASS" starttime="20200325 13:27:58.714" endtime="20200325 13:27:58.779"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${i}'=='Linkedin'</arg>
+<arg>Click link</arg>
+<arg>${linkedin_link}</arg>
+</arguments>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${linkedin_link}</arg>
+</arguments>
+<msg timestamp="20200325 13:27:58.780" level="INFO">Clicking link 'xpath=//*[@id="block-orange-content"]/section[3]/div[1]/p/span/a[3]'.</msg>
+<status status="PASS" starttime="20200325 13:27:58.779" endtime="20200325 13:27:59.060"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:58.779" endtime="20200325 13:27:59.060"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:28:01.062" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:27:59.061" endtime="20200325 13:28:01.063"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>LinkedIn</arg>
+</arguments>
+<msg timestamp="20200325 13:28:01.155" level="INFO">Current page contains text 'LinkedIn'.</msg>
+<status status="PASS" starttime="20200325 13:28:01.064" endtime="20200325 13:28:01.155"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:54.652" endtime="20200325 13:28:01.155"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:19.326" endtime="20200325 13:28:01.155"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:27:19.325" endtime="20200325 13:28:01.155"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:28:01.155" endtime="20200325 13:28:03.781"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:01.155" endtime="20200325 13:28:03.781"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:26:41.513" endtime="20200325 13:28:03.781" critical="yes"></status>
+</test>
+<test id="s1-t7" name="TA_14_arborescence_guide_vers_la_reponse_recherchee">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:03.786" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:28:03.786" endtime="20200325 13:28:06.411"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:28:06.412" endtime="20200325 13:28:07.589"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:03.786" endtime="20200325 13:28:07.589"></status>
+</kw>
+<kw name="Acceder au chat" library="actu_guide">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${guide_prod}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:07.589" level="INFO">Opening url 'https://www.orange.sn/nous-contacter'</msg>
+<status status="PASS" starttime="20200325 13:28:07.589" endtime="20200325 13:28:21.588"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:07.589" endtime="20200325 13:28:21.589"></status>
+</kw>
+<kw name="Redirection via la page du chat" library="actu_guide">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Dalal ak Diam</arg>
+</arguments>
+<msg timestamp="20200325 13:28:22.403" level="INFO">Current page contains text 'Dalal ak Diam'.</msg>
+<status status="PASS" starttime="20200325 13:28:21.590" endtime="20200325 13:28:22.403"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-orange-content"]/div[6]/div/div/div[2]/img</arg>
+</arguments>
+<msg timestamp="20200325 13:28:22.424" level="INFO">Current page contains element 'xpath=//*[@id="block-orange-content"]/div[6]/div/div/div[2]/img'.</msg>
+<status status="PASS" starttime="20200325 13:28:22.404" endtime="20200325 13:28:22.425"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:21.590" endtime="20200325 13:28:22.425"></status>
+</kw>
+<kw name="Selectionner une raison du contact" library="actu_guide">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${raison_OM}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:22.427" level="INFO">Clicking element 'xpath=//*[@id="chat-content"]/div/div/div[3]/div[3]'.</msg>
+<status status="PASS" starttime="20200325 13:28:22.426" endtime="20200325 13:28:22.607"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:22.426" endtime="20200325 13:28:22.608"></status>
+</kw>
+<kw name="Verifier message de Ibou" library="actu_guide">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>css=#block-orange-content &gt; div.contentS.contS &gt; div &gt; div &gt; div.chat-img-ibou &gt; img</arg>
+</arguments>
+<msg timestamp="20200325 13:28:22.629" level="INFO">Current page contains element 'css=#block-orange-content &gt; div.contentS.contS &gt; div &gt; div &gt; div.chat-img-ibou &gt; img'.</msg>
+<status status="PASS" starttime="20200325 13:28:22.609" endtime="20200325 13:28:22.630"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Je suis là pour vous aider.</arg>
+</arguments>
+<msg timestamp="20200325 13:28:31.915" level="INFO">Current page contains text 'Je suis là pour vous aider.'.</msg>
+<status status="PASS" starttime="20200325 13:28:22.630" endtime="20200325 13:28:31.915"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>S'agit-il plus précisément de :</arg>
+</arguments>
+<msg timestamp="20200325 13:28:31.977" level="INFO">Current page contains text 'S'agit-il plus précisément de :'.</msg>
+<status status="PASS" starttime="20200325 13:28:31.916" endtime="20200325 13:28:31.977"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:22.609" endtime="20200325 13:28:31.977"></status>
+</kw>
+<kw name="Verifier liste d'aides proposee par Ibou" library="actu_guide">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${rubrique_aide_1}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:32.001" level="INFO">Current page contains element 'xpath=//*[@id="chat-content"]/div/div/div[5]/div[2]/div[3]/div[1]'.</msg>
+<status status="PASS" starttime="20200325 13:28:31.977" endtime="20200325 13:28:32.001"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${rubrique_aide_2}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:32.016" level="INFO">Current page contains element 'xpath=//*[@id="chat-content"]/div/div/div[5]/div[2]/div[3]/div[1]'.</msg>
+<status status="PASS" starttime="20200325 13:28:32.001" endtime="20200325 13:28:32.016"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${rubrique_aide_3}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:32.039" level="INFO">Current page contains element ' xpath=//*[@id="chat-content"]/div/div/div[5]/div[2]/div[3]/div[3]'.</msg>
+<status status="PASS" starttime="20200325 13:28:32.016" endtime="20200325 13:28:32.039"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:31.977" endtime="20200325 13:28:32.039"></status>
+</kw>
+<kw name="Selectionner une raison parmi celles proposées" library="actu_guide">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,200)</arg>
+</arguments>
+<msg timestamp="20200325 13:28:32.039" level="INFO">Executing JavaScript:
+window.scrollTo(0,200)
+Without any arguments.</msg>
+<status status="PASS" starttime="20200325 13:28:32.039" endtime="20200325 13:28:32.053"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200325 13:28:34.065" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200325 13:28:32.053" endtime="20200325 13:28:34.065"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${creation_gestion_compte}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:34.065" level="INFO">Clicking element 'xpath=//*[@id="chat-content"]/div/div/div[5]/div[2]/div[3]/div[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200325 13:28:34.562" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200325 13:28:34.142" endtime="20200325 13:28:34.562"></status>
+</kw>
+<msg timestamp="20200325 13:28:34.565" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=80.0.3987.149)
+</msg>
+<status status="FAIL" starttime="20200325 13:28:34.065" endtime="20200325 13:28:34.565"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:28:32.039" endtime="20200325 13:28:34.565"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:28:34.565" endtime="20200325 13:28:37.031"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:34.565" endtime="20200325 13:28:37.032"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:28:03.785" endtime="20200325 13:28:37.033" critical="yes">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=80.0.3987.149)
+</status>
+</test>
+<test id="s1-t8" name="03MiseAjour Parcours eligibilite">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:37.036" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:28:37.036" endtime="20200325 13:28:39.641"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:28:39.642" endtime="20200325 13:28:40.810"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:37.036" endtime="20200325 13:28:40.810"></status>
+</kw>
+<kw name="Go to page dacceuil portail preprod" library="keyword_PageDacces">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_portailB2C_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:40.816" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/'</msg>
+<status status="PASS" starttime="20200325 13:28:40.815" endtime="20200325 13:28:55.013"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${titlePage}</var>
+</assign>
+<msg timestamp="20200325 13:28:55.030" level="INFO">${titlePage} = Orange Sénégal|Mobile, pass internet, Orange Money, ADSL Fibre | Portail Orange SN</msg>
+<status status="PASS" starttime="20200325 13:28:55.013" endtime="20200325 13:28:55.031"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${titlePage}' == 'Erreur liée à la confidentialité'</arg>
+<arg>Run Keywords</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="details-button"]</arg>
+<arg>AND</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="proceed-link"]</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:28:55.031" endtime="20200325 13:28:55.032"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:40.810" endtime="20200325 13:28:55.032"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>1</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>@{Index}</var>
+</assign>
+<msg timestamp="20200325 13:28:55.035" level="INFO">@{Index} = [ 1 | 2 ]</msg>
+<status status="PASS" starttime="20200325 13:28:55.033" endtime="20200325 13:28:55.036"></status>
+</kw>
+<kw name="${Item} IN [ @{Index} ]" type="for">
+<kw name="${Item} = 1" type="foritem">
+<kw name="cliquer sur le lien Internet/Fixe/TV" library="keyword_fibre">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link_InternetFixeTV}</arg>
+</arguments>
+<msg timestamp="20200325 13:28:55.038" level="INFO">Clicking link 'link=Internet/Fixe/TV'.</msg>
+<status status="PASS" starttime="20200325 13:28:55.038" endtime="20200325 13:29:15.936"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:28:55.038" endtime="20200325 13:29:15.937"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>cliquer sur offre fibre bi</arg>
+<arg>ELSE</arg>
+<arg>cliquer sur offre fibre Mega</arg>
+</arguments>
+<kw name="cliquer sur offre fibre bi" library="keyword_fibre">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_offreFibreBi}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:29:15.942" endtime="20200325 13:29:16.026"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_offreFibreBi}</arg>
+</arguments>
+<msg timestamp="20200325 13:29:16.026" level="INFO">Clicking element 'xpath=(//a[contains(@href, '/internet-adsl-fibre/fibre-bi')])[3]'.</msg>
+<status status="PASS" starttime="20200325 13:29:16.026" endtime="20200325 13:29:16.306"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:29:15.940" endtime="20200325 13:29:16.306"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:29:15.938" endtime="20200325 13:29:16.307"></status>
+</kw>
+<kw name="cliquer sur le lien JeSuisInteresser" library="keyword_fibre">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_JeSuisInteresser}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200325 13:29:33.725" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200325 13:29:25.824" endtime="20200325 13:29:33.725"></status>
+</kw>
+<msg timestamp="20200325 13:29:33.725" level="FAIL">Element with locator 'xpath=//*[@id="block-orange-content"]/div[2]/div[1]/div[2]/a' not found.</msg>
+<status status="FAIL" starttime="20200325 13:29:16.309" endtime="20200325 13:29:33.725"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:29:16.307" endtime="20200325 13:29:33.725"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:28:55.037" endtime="20200325 13:29:33.725"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:28:55.036" endtime="20200325 13:29:33.725"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:29:33.729" endtime="20200325 13:29:36.236"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:29:33.729" endtime="20200325 13:29:36.236"></status>
+</kw>
+<tags>
+<tag>TA03</tag>
+</tags>
+<status status="FAIL" starttime="20200325 13:28:37.036" endtime="20200325 13:29:36.237" critical="yes">Element with locator 'xpath=//*[@id="block-orange-content"]/div[2]/div[1]/div[2]/a' not found.</status>
+</test>
+<test id="s1-t9" name="04AvantageIllimix">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:29:36.242" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:29:36.242" endtime="20200325 13:29:38.892"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:29:38.892" endtime="20200325 13:29:40.060"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:29:36.242" endtime="20200325 13:29:40.060"></status>
+</kw>
+<kw name="Go to page dacceuil portail preprod" library="keyword_PageDacces">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_portailB2C_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:29:40.060" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/'</msg>
+<status status="PASS" starttime="20200325 13:29:40.060" endtime="20200325 13:30:02.265"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${titlePage}</var>
+</assign>
+<msg timestamp="20200325 13:30:02.277" level="INFO">${titlePage} = Orange Sénégal|Mobile, pass internet, Orange Money, ADSL Fibre | Portail Orange SN</msg>
+<status status="PASS" starttime="20200325 13:30:02.265" endtime="20200325 13:30:02.277"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${titlePage}' == 'Erreur liée à la confidentialité'</arg>
+<arg>Run Keywords</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="details-button"]</arg>
+<arg>AND</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="proceed-link"]</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:02.277" endtime="20200325 13:30:02.278"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:29:40.060" endtime="20200325 13:30:02.278"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+</arguments>
+<assign>
+<var>@{Index}</var>
+</assign>
+<msg timestamp="20200325 13:30:02.278" level="INFO">@{Index} = [ 1 | 2 | 3 ]</msg>
+<status status="PASS" starttime="20200325 13:30:02.278" endtime="20200325 13:30:02.278"></status>
+</kw>
+<kw name="${Item} IN [ @{Index} ]" type="for">
+<kw name="${Item} = 1" type="foritem">
+<kw name="Cliquer sur le lien Les Illimix" library="keyword_illimix">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link_Les_Illimix}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:02.278" level="INFO">Clicking link 'link=Les Illimix'.</msg>
+<status status="PASS" starttime="20200325 13:30:02.278" endtime="20200325 13:30:07.441"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:02.278" endtime="20200325 13:30:07.441"></status>
+</kw>
+<kw name="Scroll to illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_scrollToIlimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:07.442" endtime="20200325 13:30:07.502"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_scrollToIlimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:07.502" endtime="20200325 13:30:20.273"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:07.442" endtime="20200325 13:30:20.274"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>Cliquer sur Illimix New</arg>
+<arg>ELSE IF</arg>
+<arg>${Item}==2</arg>
+<arg>Cliquer sur Illimix Allo</arg>
+<arg>ELSE</arg>
+<arg>Cliquer sur Illimix Max</arg>
+</arguments>
+<kw name="Cliquer sur Illimix New" library="keyword_illimix">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_illimix_New}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:20.277" endtime="20200325 13:30:20.580"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_illimix_New}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:20.580" endtime="20200325 13:30:20.619"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_illimix_New}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:20.620" level="INFO">Clicking element 'xpath=//*[@id="nav-home-tab0"]'.</msg>
+<status status="PASS" starttime="20200325 13:30:20.619" endtime="20200325 13:30:20.781"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:20.276" endtime="20200325 13:30:20.781"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:20.274" endtime="20200325 13:30:20.781"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>Verifier affichage des different pass de l'illimix New</arg>
+<arg>ELSE IF</arg>
+<arg>${Item}==2</arg>
+<arg>Verifier affichage des different pass de l'illimix Allo</arg>
+<arg>ELSE</arg>
+<arg>Verifier affichage des different pass de l'illimix Max</arg>
+</arguments>
+<kw name="Verifier affichage des different pass de l'illimix New" library="keyword_illimix">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_passIllimix_New}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:20.782" endtime="20200325 13:30:20.828"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:20.782" endtime="20200325 13:30:20.828"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:20.781" endtime="20200325 13:30:20.828"></status>
+</kw>
+<kw name="Scroll to avantage illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:20.828" endtime="20200325 13:30:20.869"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:20.869" endtime="20200325 13:30:21.237"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:20.828" endtime="20200325 13:30:21.239"></status>
+</kw>
+<kw name="Cliquer sur avantage d'un illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:21.240" endtime="20200325 13:30:21.308"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:21.310" level="INFO">Clicking element 'id=home-tab'.</msg>
+<status status="PASS" starttime="20200325 13:30:21.308" endtime="20200325 13:30:21.494"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:21.240" endtime="20200325 13:30:21.494"></status>
+</kw>
+<kw name="Verifier affichage des infos Anvantage illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_infoAvantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:21.495" endtime="20200325 13:30:21.549"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:21.495" endtime="20200325 13:30:21.550"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:02.278" endtime="20200325 13:30:21.550"></status>
+</kw>
+<kw name="${Item} = 2" type="foritem">
+<kw name="Cliquer sur le lien Les Illimix" library="keyword_illimix">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link_Les_Illimix}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:21.551" level="INFO">Clicking link 'link=Les Illimix'.</msg>
+<status status="PASS" starttime="20200325 13:30:21.550" endtime="20200325 13:30:21.962"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:21.550" endtime="20200325 13:30:21.962"></status>
+</kw>
+<kw name="Scroll to illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_scrollToIlimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:21.964" endtime="20200325 13:30:23.015"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_scrollToIlimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:23.015" endtime="20200325 13:30:23.311"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:21.963" endtime="20200325 13:30:23.312"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>Cliquer sur Illimix New</arg>
+<arg>ELSE IF</arg>
+<arg>${Item}==2</arg>
+<arg>Cliquer sur Illimix Allo</arg>
+<arg>ELSE</arg>
+<arg>Cliquer sur Illimix Max</arg>
+</arguments>
+<kw name="Cliquer sur Illimix Allo" library="keyword_illimix">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_illimix_Allo}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:23.312" endtime="20200325 13:30:23.604"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_illimix_Allo}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:23.604" endtime="20200325 13:30:23.687"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_illimix_Allo}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:23.687" level="INFO">Clicking element 'xpath=//*[@id="nav-home-tab1"]'.</msg>
+<status status="PASS" starttime="20200325 13:30:23.687" endtime="20200325 13:30:24.017"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:23.312" endtime="20200325 13:30:24.017"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:23.312" endtime="20200325 13:30:24.017"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>Verifier affichage des different pass de l'illimix New</arg>
+<arg>ELSE IF</arg>
+<arg>${Item}==2</arg>
+<arg>Verifier affichage des different pass de l'illimix Allo</arg>
+<arg>ELSE</arg>
+<arg>Verifier affichage des different pass de l'illimix Max</arg>
+</arguments>
+<kw name="Verifier affichage des different pass de l'illimix Allo" library="keyword_illimix">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_passIllimix_Allo}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:24.020" endtime="20200325 13:30:24.349"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:24.020" endtime="20200325 13:30:24.349"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:24.017" endtime="20200325 13:30:24.349"></status>
+</kw>
+<kw name="Scroll to avantage illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:24.352" endtime="20200325 13:30:24.427"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:24.427" endtime="20200325 13:30:24.789"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:24.349" endtime="20200325 13:30:24.789"></status>
+</kw>
+<kw name="Cliquer sur avantage d'un illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:24.794" endtime="20200325 13:30:24.855"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:24.855" level="INFO">Clicking element 'id=home-tab'.</msg>
+<status status="PASS" starttime="20200325 13:30:24.855" endtime="20200325 13:30:25.028"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:24.789" endtime="20200325 13:30:25.028"></status>
+</kw>
+<kw name="Verifier affichage des infos Anvantage illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_infoAvantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:25.029" endtime="20200325 13:30:25.065"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:25.028" endtime="20200325 13:30:25.065"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:21.550" endtime="20200325 13:30:25.065"></status>
+</kw>
+<kw name="${Item} = 3" type="foritem">
+<kw name="Cliquer sur le lien Les Illimix" library="keyword_illimix">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link_Les_Illimix}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:25.065" level="INFO">Clicking link 'link=Les Illimix'.</msg>
+<status status="PASS" starttime="20200325 13:30:25.065" endtime="20200325 13:30:25.899"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:25.065" endtime="20200325 13:30:25.900"></status>
+</kw>
+<kw name="Scroll to illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_scrollToIlimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:25.901" endtime="20200325 13:30:26.600"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_scrollToIlimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:26.600" endtime="20200325 13:30:26.897"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:25.900" endtime="20200325 13:30:26.897"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>Cliquer sur Illimix New</arg>
+<arg>ELSE IF</arg>
+<arg>${Item}==2</arg>
+<arg>Cliquer sur Illimix Allo</arg>
+<arg>ELSE</arg>
+<arg>Cliquer sur Illimix Max</arg>
+</arguments>
+<kw name="Cliquer sur Illimix Max" library="keyword_illimix">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_illimix_Max}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:26.903" endtime="20200325 13:30:29.677"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_illimix_Max}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:29.677" endtime="20200325 13:30:29.715"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_illimix_Max}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:29.715" level="INFO">Clicking element 'xpath=//*[@id="nav-home-tab2"]'.</msg>
+<status status="PASS" starttime="20200325 13:30:29.715" endtime="20200325 13:30:29.901"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:26.902" endtime="20200325 13:30:29.901"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:26.897" endtime="20200325 13:30:29.901"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>Verifier affichage des different pass de l'illimix New</arg>
+<arg>ELSE IF</arg>
+<arg>${Item}==2</arg>
+<arg>Verifier affichage des different pass de l'illimix Allo</arg>
+<arg>ELSE</arg>
+<arg>Verifier affichage des different pass de l'illimix Max</arg>
+</arguments>
+<kw name="Verifier affichage des different pass de l'illimix Max" library="keyword_illimix">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_passIllimix_Max}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:29.904" endtime="20200325 13:30:30.585"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:29.903" endtime="20200325 13:30:30.585"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:29.902" endtime="20200325 13:30:30.585"></status>
+</kw>
+<kw name="Scroll to avantage illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:30.586" endtime="20200325 13:30:30.630"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:30.631" endtime="20200325 13:30:30.932"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:30.585" endtime="20200325 13:30:30.933"></status>
+</kw>
+<kw name="Cliquer sur avantage d'un illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:30.934" endtime="20200325 13:30:30.999"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_avantageIllimix}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:30.999" level="INFO">Clicking element 'id=home-tab'.</msg>
+<status status="PASS" starttime="20200325 13:30:30.999" endtime="20200325 13:30:31.226"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:30.933" endtime="20200325 13:30:31.227"></status>
+</kw>
+<kw name="Verifier affichage des infos Anvantage illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_infoAvantageIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:30:31.227" endtime="20200325 13:30:31.264"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:31.227" endtime="20200325 13:30:31.264"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:25.065" endtime="20200325 13:30:31.264"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:02.278" endtime="20200325 13:30:31.264"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:30:31.264" endtime="20200325 13:30:33.823"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:31.264" endtime="20200325 13:30:33.824"></status>
+</kw>
+<tags>
+<tag>TA04</tag>
+</tags>
+<status status="PASS" starttime="20200325 13:29:36.241" endtime="20200325 13:30:33.824" critical="yes"></status>
+</test>
+<test id="s1-t10" name="06Voir Infos sur comment Souscrire a un pass">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:33.830" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:30:33.830" endtime="20200325 13:30:36.437"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:30:36.438" endtime="20200325 13:30:37.587"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:33.830" endtime="20200325 13:30:37.588"></status>
+</kw>
+<kw name="Go to page dacceuil portail preprod" library="keyword_PageDacces">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_portailB2C_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:30:37.592" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/'</msg>
+<status status="PASS" starttime="20200325 13:30:37.591" endtime="20200325 13:31:11.552"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${titlePage}</var>
+</assign>
+<msg timestamp="20200325 13:31:11.577" level="INFO">${titlePage} = Orange Sénégal|Mobile, pass internet, Orange Money, ADSL Fibre | Portail Orange SN</msg>
+<status status="PASS" starttime="20200325 13:31:11.553" endtime="20200325 13:31:11.577"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${titlePage}' == 'Erreur liée à la confidentialité'</arg>
+<arg>Run Keywords</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="details-button"]</arg>
+<arg>AND</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="proceed-link"]</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:11.577" endtime="20200325 13:31:11.577"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:30:37.589" endtime="20200325 13:31:11.577"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+</arguments>
+<assign>
+<var>@{Index}</var>
+</assign>
+<msg timestamp="20200325 13:31:11.577" level="INFO">@{Index} = [ 1 | 2 | 3 ]</msg>
+<status status="PASS" starttime="20200325 13:31:11.577" endtime="20200325 13:31:11.577"></status>
+</kw>
+<kw name="${Item} IN [ @{Index} ]" type="for">
+<kw name="${Item} = 1" type="foritem">
+<kw name="Cliquer sur le lien Les Illimix" library="keyword_illimix">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link_Les_Illimix}</arg>
+</arguments>
+<msg timestamp="20200325 13:31:11.581" level="INFO">Clicking link 'link=Les Illimix'.</msg>
+<status status="PASS" starttime="20200325 13:31:11.581" endtime="20200325 13:31:15.525"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:11.581" endtime="20200325 13:31:15.525"></status>
+</kw>
+<kw name="Scroll to illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_scrollToIlimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:15.531" endtime="20200325 13:31:15.621"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_scrollToIlimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:15.621" endtime="20200325 13:31:15.939"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:15.525" endtime="20200325 13:31:15.940"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>Cliquer sur Illimix New</arg>
+<arg>ELSE IF</arg>
+<arg>${Item}==2</arg>
+<arg>Cliquer sur Illimix Allo</arg>
+<arg>ELSE</arg>
+<arg>Cliquer sur Illimix Max</arg>
+</arguments>
+<kw name="Cliquer sur Illimix New" library="keyword_illimix">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_illimix_New}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:15.944" endtime="20200325 13:31:16.284"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_illimix_New}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:16.285" endtime="20200325 13:31:16.374"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_illimix_New}</arg>
+</arguments>
+<msg timestamp="20200325 13:31:16.374" level="INFO">Clicking element 'xpath=//*[@id="nav-home-tab0"]'.</msg>
+<status status="PASS" starttime="20200325 13:31:16.374" endtime="20200325 13:31:16.577"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:15.941" endtime="20200325 13:31:16.578"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:15.941" endtime="20200325 13:31:16.578"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Item}==1</arg>
+<arg>Verifier affichage des different pass de l'illimix New</arg>
+<arg>ELSE IF</arg>
+<arg>${Item}==2</arg>
+<arg>Verifier affichage des different pass de l'illimix Allo</arg>
+<arg>ELSE</arg>
+<arg>Verifier affichage des different pass de l'illimix Max</arg>
+</arguments>
+<kw name="Verifier affichage des different pass de l'illimix New" library="keyword_illimix">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_passIllimix_New}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:16.580" endtime="20200325 13:31:16.628"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:16.580" endtime="20200325 13:31:16.628"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:16.578" endtime="20200325 13:31:16.628"></status>
+</kw>
+<kw name="Scroll to comment souscrire" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_scrollToCommentSouscrire}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:16.629" endtime="20200325 13:31:16.671"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_scrollToCommentSouscrire}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:16.672" endtime="20200325 13:31:17.019"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:16.628" endtime="20200325 13:31:17.020"></status>
+</kw>
+<kw name="Cliquer sur comment souscrire a un pass d'un illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_commentSouscrireIllimix}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:17.021" endtime="20200325 13:31:17.195"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_commentSouscrireIllimix}</arg>
+</arguments>
+<msg timestamp="20200325 13:31:17.197" level="INFO">Clicking element 'id=profile-tab'.</msg>
+<status status="PASS" starttime="20200325 13:31:17.196" endtime="20200325 13:31:31.467"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:17.020" endtime="20200325 13:31:31.468"></status>
+</kw>
+<kw name="Scroll to infos souscription" library="keyword_illimix">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_scrollToInfoSouscription}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:31.469" endtime="20200325 13:31:31.580"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${xpath_scrollToInfoSouscription}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:31.580" endtime="20200325 13:31:31.897"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:31.468" endtime="20200325 13:31:31.898"></status>
+</kw>
+<kw name="Verifier affichage des infos de souscription a un pass illimix" library="keyword_illimix">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_infoSouscriptionIllimix_option1}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200325 13:31:37.521" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200325 13:31:37.052" endtime="20200325 13:31:37.521"></status>
+</kw>
+<msg timestamp="20200325 13:31:37.521" level="FAIL">Element 'xpath=//*[@id="souscriptions"]/div[1]/div/div/div[2]/p' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20200325 13:31:31.898" endtime="20200325 13:31:37.522"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:31:31.898" endtime="20200325 13:31:37.522"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:31:11.581" endtime="20200325 13:31:37.522"></status>
+</kw>
+<status status="FAIL" starttime="20200325 13:31:11.581" endtime="20200325 13:31:37.522"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:31:37.523" endtime="20200325 13:31:40.001"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:37.523" endtime="20200325 13:31:40.002"></status>
+</kw>
+<tags>
+<tag>TA06</tag>
+</tags>
+<status status="FAIL" starttime="20200325 13:30:33.828" endtime="20200325 13:31:40.002" critical="yes">Element 'xpath=//*[@id="souscriptions"]/div[1]/div/div/div[2]/p' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t11" name="12Creer compte OM avec caracteres speciaux">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:31:40.007" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:31:40.007" endtime="20200325 13:31:42.587"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:31:42.587" endtime="20200325 13:31:43.772"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:40.006" endtime="20200325 13:31:43.772"></status>
+</kw>
+<kw name="Go to Formulaire OM" library="keyword_FormulaireOM">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_Inscription_OM_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:31:43.775" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/formulaire-orange-money'</msg>
+<status status="PASS" starttime="20200325 13:31:43.775" endtime="20200325 13:31:49.070"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:43.772" endtime="20200325 13:31:49.070"></status>
+</kw>
+<kw name="Creation dossier unique pour le download et le upload des fichiers et la saisie des donnees" library="keyword_FormulaireOM">
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<arguments>
+<arg>epoch</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200325 13:31:49.070" level="INFO">${now} = 1585143109</msg>
+<status status="PASS" starttime="20200325 13:31:49.070" endtime="20200325 13:31:49.070"></status>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${OUTPUT DIR}</arg>
+<arg>TestDownloads_${now}</arg>
+</arguments>
+<assign>
+<var>${download directory}</var>
+</assign>
+<msg timestamp="20200325 13:31:49.070" level="INFO">${download directory} = C:\Developpement\RobotFramework\Portail\Result\TestDownloads_1585143109</msg>
+<status status="PASS" starttime="20200325 13:31:49.070" endtime="20200325 13:31:49.070"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${download directory}</arg>
+</arguments>
+<msg timestamp="20200325 13:31:49.074" level="INFO" html="yes">Created directory '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\TestDownloads_1585143109"&gt;C:\Developpement\RobotFramework\Portail\Result\TestDownloads_1585143109&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:31:49.070" endtime="20200325 13:31:49.075"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${chrome options}</var>
+</assign>
+<msg timestamp="20200325 13:31:49.077" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000014F4E1201D0&gt;</msg>
+<status status="PASS" starttime="20200325 13:31:49.076" endtime="20200325 13:31:49.077"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>Chrome PDF Viewer</arg>
+</arguments>
+<assign>
+<var>${disabled}</var>
+</assign>
+<msg timestamp="20200325 13:31:49.078" level="INFO">${disabled} = ['Chrome PDF Viewer']</msg>
+<status status="PASS" starttime="20200325 13:31:49.077" endtime="20200325 13:31:49.078"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>download.default_directory=${download directory}</arg>
+<arg>plugins.plugins_disabled=${disabled}</arg>
+</arguments>
+<assign>
+<var>${prefs}</var>
+</assign>
+<msg timestamp="20200325 13:31:49.079" level="INFO">${prefs} = {'download.default_directory': 'C:\\Developpement\\RobotFramework\\Portail\\Result\\TestDownloads_1585143109', 'plugins.plugins_disabled': ['Chrome PDF Viewer']}</msg>
+<status status="PASS" starttime="20200325 13:31:49.078" endtime="20200325 13:31:49.079"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:31:49.079" endtime="20200325 13:31:49.080"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome options}</arg>
+</arguments>
+<msg timestamp="20200325 13:31:49.080" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200325 13:31:49.080" endtime="20200325 13:31:51.448"></status>
+</kw>
+<kw name="Page Inscription Orange Money" library="keyword_FormulaireOM">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_Inscription_OM_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:31:51.448" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/formulaire-orange-money'</msg>
+<status status="PASS" starttime="20200325 13:31:51.448" endtime="20200325 13:32:04.146"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${titlePage}</var>
+</assign>
+<msg timestamp="20200325 13:32:04.157" level="INFO">${titlePage} = Formulaire Orange Money | Portail Orange SN</msg>
+<status status="PASS" starttime="20200325 13:32:04.146" endtime="20200325 13:32:04.157"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${titlePage}' == 'Erreur liée à la confidentialité'</arg>
+<arg>Run Keywords</arg>
+<arg>Click Element</arg>
+<arg>${xpath_details}</arg>
+<arg>AND</arg>
+<arg>Click Element</arg>
+<arg>${xpath_accesPage}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:04.158" endtime="20200325 13:32:04.159"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:51.448" endtime="20200325 13:32:04.159"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_fichierToDownload}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:04.159" endtime="20200325 13:32:04.208"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_fichierToDownload}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:04.209" level="INFO">Clicking element 'xpath=//*[@id="block-orange-content"]/div[2]/div[2]/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20200325 13:32:04.208" endtime="20200325 13:32:04.437"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${download directory}/${libelle_fichier_cree}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:04.440" level="INFO" html="yes">Created file '&lt;a href="file://C:\Developpement\RobotFramework\Portail\Result\TestDownloads_1585143109\monfichier.png"&gt;C:\Developpement\RobotFramework\Portail\Result\TestDownloads_1585143109\monfichier.png&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20200325 13:32:04.438" endtime="20200325 13:32:04.440"></status>
+</kw>
+<kw name="Renseigner le prenom" library="keyword_FormulaireOM">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_prenom}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:04.441" endtime="20200325 13:32:04.484"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_prenom}</arg>
+<arg>${prenom}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:04.484" level="INFO">Typing text 'testprenom' into text field 'id=prenom'.</msg>
+<status status="PASS" starttime="20200325 13:32:04.484" endtime="20200325 13:32:04.784"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:04.440" endtime="20200325 13:32:04.784"></status>
+</kw>
+<kw name="Renseigner le nom" library="keyword_FormulaireOM">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_nom}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:04.785" endtime="20200325 13:32:04.852"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_nom}</arg>
+<arg>${nom}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:04.853" level="INFO">Typing text 'testnom' into text field 'id=nom'.</msg>
+<status status="PASS" starttime="20200325 13:32:04.852" endtime="20200325 13:32:05.052"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:04.785" endtime="20200325 13:32:05.052"></status>
+</kw>
+<kw name="Renseigner le mail avec caracteres speciaux" library="keyword_FormulaireOM">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_mail}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:05.052" endtime="20200325 13:32:05.104"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_mail}</arg>
+<arg>${mail}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:05.104" level="INFO">Typing text 'tést@gmail.com' into text field 'id=mail'.</msg>
+<status status="PASS" starttime="20200325 13:32:05.104" endtime="20200325 13:32:05.389"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:05.052" endtime="20200325 13:32:05.389"></status>
+</kw>
+<kw name="Renseigner le numero" library="keyword_FormulaireOM">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>id=numero</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:05.390" endtime="20200325 13:32:05.446"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=numero</arg>
+<arg>ESC</arg>
+</arguments>
+<msg timestamp="20200325 13:32:05.446" level="INFO">Sending key(s) ('ESC',) to id=numero element.</msg>
+<msg timestamp="20200325 13:32:05.461" level="INFO">Pressing special key ESCAPE to element.</msg>
+<status status="PASS" starttime="20200325 13:32:05.446" endtime="20200325 13:32:05.911"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=numero</arg>
+<arg>${num}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:05.913" level="INFO">Typing text '77 371 43 88' into text field 'id=numero'.</msg>
+<status status="PASS" starttime="20200325 13:32:05.912" endtime="20200325 13:32:06.353"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:05.389" endtime="20200325 13:32:06.353"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200325 13:32:07.358" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200325 13:32:06.353" endtime="20200325 13:32:07.358"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_fichierToUpload}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:07.358" endtime="20200325 13:32:07.406"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>${xpath_fichierToUpload}</arg>
+<arg>${download directory}/${libelle_formulaire}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:07.407" endtime="20200325 13:32:07.458"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>id=cin-recto</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:07.459" endtime="20200325 13:32:07.508"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>id=cin-recto</arg>
+<arg>${download directory}/${libelle_fichier_cree}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:07.509" endtime="20200325 13:32:07.555"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>id=cin-verso</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:07.555" endtime="20200325 13:32:07.607"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>id=cin-verso</arg>
+<arg>${download directory}/${libelle_fichier_cree}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:07.607" endtime="20200325 13:32:07.651"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:31:49.070" endtime="20200325 13:32:07.651"></status>
+</kw>
+<kw name="Cliquer sur le bouton ENVOYER" library="keyword_FormulaireOM">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_btn_envoyer}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:07.652" endtime="20200325 13:32:07.698"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_btn_envoyer}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:07.698" level="INFO">Clicking element 'id=submit'.</msg>
+<status status="PASS" starttime="20200325 13:32:07.698" endtime="20200325 13:32:07.948"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:07.652" endtime="20200325 13:32:07.948"></status>
+</kw>
+<kw name="Verifier le msg d Erreur" library="keyword_FormulaireOM">
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns value of ``attribute`` from element ``locator``.</doc>
+<arguments>
+<arg>${xpath_mail}</arg>
+<arg>${validationMsg}</arg>
+</arguments>
+<assign>
+<var>${msgValidator}</var>
+</assign>
+<msg timestamp="20200325 13:32:08.011" level="INFO">${msgValidator} = La partie suivie du symbole "@" ne doit pas contenir le caractère "é".</msg>
+<status status="PASS" starttime="20200325 13:32:07.949" endtime="20200325 13:32:08.011"></status>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<doc>Verifies that the given item is not empty.</doc>
+<arguments>
+<arg>${msgValidator}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:08.011" level="INFO">Length is 70</msg>
+<status status="PASS" starttime="20200325 13:32:08.011" endtime="20200325 13:32:08.012"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:07.949" endtime="20200325 13:32:08.012"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:32:08.012" endtime="20200325 13:32:13.062"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:08.012" endtime="20200325 13:32:13.062"></status>
+</kw>
+<tags>
+<tag>TA12</tag>
+</tags>
+<status status="PASS" starttime="20200325 13:31:40.005" endtime="20200325 13:32:13.063" critical="yes"></status>
+</test>
+<test id="s1-t12" name="16Recherche avec resultat">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:13.070" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:32:13.070" endtime="20200325 13:32:15.689"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:32:15.690" endtime="20200325 13:32:16.851"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:13.069" endtime="20200325 13:32:16.851"></status>
+</kw>
+<kw name="Go to page dacceuil portail preprod" library="keyword_PageDacces">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_portailB2C_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:16.851" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/'</msg>
+<status status="PASS" starttime="20200325 13:32:16.851" endtime="20200325 13:32:31.595"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${titlePage}</var>
+</assign>
+<msg timestamp="20200325 13:32:31.692" level="INFO">${titlePage} = Orange Sénégal|Mobile, pass internet, Orange Money, ADSL Fibre | Portail Orange SN</msg>
+<status status="PASS" starttime="20200325 13:32:31.596" endtime="20200325 13:32:31.692"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${titlePage}' == 'Erreur liée à la confidentialité'</arg>
+<arg>Run Keywords</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="details-button"]</arg>
+<arg>AND</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="proceed-link"]</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:31.693" endtime="20200325 13:32:31.695"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:16.851" endtime="20200325 13:32:31.695"></status>
+</kw>
+<kw name="Se placer au niveau de licône Recherche" library="keyword_recherche">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${xpath_iconeRecherche_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:31.696" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/header/div/nav/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20200325 13:32:31.696" endtime="20200325 13:32:32.010"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_inputRecherche_PREPROD}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:32.010" endtime="20200325 13:32:32.125"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_inputRecherche_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:32.126" level="INFO">Clicking element 'xpath=//*[@id="form-seach"]/div/input'.</msg>
+<status status="PASS" starttime="20200325 13:32:32.125" endtime="20200325 13:32:32.282"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:31.696" endtime="20200325 13:32:32.282"></status>
+</kw>
+<kw name="entrer un texte existant dans la page au niveau du input de recherche" library="keyword_recherche">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_inputRecherche_PREPROD}</arg>
+<arg>${orange_money}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:32.282" level="INFO">Typing text 'Orange Money' into text field 'xpath=//*[@id="form-seach"]/div/input'.</msg>
+<status status="PASS" starttime="20200325 13:32:32.282" endtime="20200325 13:32:32.480"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:32.282" endtime="20200325 13:32:32.480"></status>
+</kw>
+<kw name="Cliquer sur l'icône recherche" library="keyword_recherche">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_iconeRecherche_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:32.481" level="INFO">Clicking element 'xpath=/html/body/div[3]/header/div/nav/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20200325 13:32:32.481" endtime="20200325 13:32:37.268"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:32.481" endtime="20200325 13:32:37.268"></status>
+</kw>
+<kw name="Recuperer le resultat de la recherche et tester si c'est different de zero" library="keyword_recherche">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_resultatRecherche_PREPROD}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:37.269" endtime="20200325 13:32:37.319"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_resultatRecherche_PREPROD}</arg>
+</arguments>
+<assign>
+<var>${textResultat}</var>
+</assign>
+<msg timestamp="20200325 13:32:37.357" level="INFO">${textResultat} = 26 résultats</msg>
+<status status="PASS" starttime="20200325 13:32:37.320" endtime="20200325 13:32:37.357"></status>
+</kw>
+<kw name="Get Substring" library="String">
+<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
+<arguments>
+<arg>${textResultat}</arg>
+<arg>0</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20200325 13:32:37.359" level="INFO">${val} = 2</msg>
+<status status="PASS" starttime="20200325 13:32:37.358" endtime="20200325 13:32:37.359"></status>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are equal.</doc>
+<arguments>
+<arg>${val}</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:37.359" endtime="20200325 13:32:37.360"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:37.269" endtime="20200325 13:32:37.360"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:32:37.360" endtime="20200325 13:32:39.838"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:37.360" endtime="20200325 13:32:39.839"></status>
+</kw>
+<tags>
+<tag>TA16</tag>
+</tags>
+<status status="PASS" starttime="20200325 13:32:13.067" endtime="20200325 13:32:39.839" critical="yes"></status>
+</test>
+<test id="s1-t13" name="17Recherche sans resultat">
+<kw name="Ouverture navigateur" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:39.846" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200325 13:32:39.846" endtime="20200325 13:32:42.441"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 13:32:42.442" endtime="20200325 13:32:43.617"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:39.846" endtime="20200325 13:32:43.617"></status>
+</kw>
+<kw name="Go to page dacceuil portail preprod" library="keyword_PageDacces">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_portailB2C_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:43.621" level="INFO">Opening url 'https://newportailb2c.orange-sonatel.com/'</msg>
+<status status="PASS" starttime="20200325 13:32:43.617" endtime="20200325 13:32:57.436"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${titlePage}</var>
+</assign>
+<msg timestamp="20200325 13:32:57.451" level="INFO">${titlePage} = Orange Sénégal|Mobile, pass internet, Orange Money, ADSL Fibre | Portail Orange SN</msg>
+<status status="PASS" starttime="20200325 13:32:57.436" endtime="20200325 13:32:57.451"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${titlePage}' == 'Erreur liée à la confidentialité'</arg>
+<arg>Run Keywords</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="details-button"]</arg>
+<arg>AND</arg>
+<arg>Click Element</arg>
+<arg>xpath=//*[@id="proceed-link"]</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:57.451" endtime="20200325 13:32:57.451"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:43.617" endtime="20200325 13:32:57.451"></status>
+</kw>
+<kw name="Se placer au niveau de licône Recherche" library="keyword_recherche">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${xpath_iconeRecherche_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:57.451" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div[3]/header/div/nav/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20200325 13:32:57.451" endtime="20200325 13:32:57.768"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_inputRecherche_PREPROD}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:32:57.768" endtime="20200325 13:32:57.825"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_inputRecherche_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:57.826" level="INFO">Clicking element 'xpath=//*[@id="form-seach"]/div/input'.</msg>
+<status status="PASS" starttime="20200325 13:32:57.826" endtime="20200325 13:32:57.979"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:57.451" endtime="20200325 13:32:57.979"></status>
+</kw>
+<kw name="entrer un texte inexistant dans la page au niveau du input de recherche" library="keyword_recherche">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_inputRecherche_PREPROD}</arg>
+<arg>${text_inexistant}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:57.980" level="INFO">Typing text 'xyxyxyyxyx' into text field 'xpath=//*[@id="form-seach"]/div/input'.</msg>
+<status status="PASS" starttime="20200325 13:32:57.980" endtime="20200325 13:32:58.121"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:57.980" endtime="20200325 13:32:58.121"></status>
+</kw>
+<kw name="Cliquer sur l'icône recherche" library="keyword_recherche">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_iconeRecherche_PREPROD}</arg>
+</arguments>
+<msg timestamp="20200325 13:32:58.122" level="INFO">Clicking element 'xpath=/html/body/div[3]/header/div/nav/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20200325 13:32:58.122" endtime="20200325 13:33:02.990"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:32:58.122" endtime="20200325 13:33:02.991"></status>
+</kw>
+<kw name="Recuperer le resultat de la recherche et tester si c'est égale à zero" library="keyword_recherche">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${xpath_resultatRecherche_PREPROD}</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:33:02.995" endtime="20200325 13:33:03.103"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_resultatRecherche_PREPROD}</arg>
+</arguments>
+<assign>
+<var>${textResultat}</var>
+</assign>
+<msg timestamp="20200325 13:33:03.184" level="INFO">${textResultat} = 0 résultats</msg>
+<status status="PASS" starttime="20200325 13:33:03.103" endtime="20200325 13:33:03.184"></status>
+</kw>
+<kw name="Get Substring" library="String">
+<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
+<arguments>
+<arg>${textResultat}</arg>
+<arg>0</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20200325 13:33:03.184" level="INFO">${val} = 0</msg>
+<status status="PASS" starttime="20200325 13:33:03.184" endtime="20200325 13:33:03.184"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${val}</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20200325 13:33:03.184" endtime="20200325 13:33:03.188"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:33:02.992" endtime="20200325 13:33:03.188"></status>
+</kw>
+<kw name="Fermeture navigateur" library="common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200325 13:33:03.188" endtime="20200325 13:33:05.684"></status>
+</kw>
+<status status="PASS" starttime="20200325 13:33:03.188" endtime="20200325 13:33:05.684"></status>
+</kw>
+<tags>
+<tag>TA17</tag>
+</tags>
+<status status="PASS" starttime="20200325 13:32:39.845" endtime="20200325 13:33:05.684" critical="yes"></status>
+</test>
+<status status="FAIL" starttime="20200325 13:23:22.885" endtime="20200325 13:33:05.693"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="6">Critical Tests</stat>
+<stat pass="7" fail="6">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Smoke</stat>
+<stat pass="0" fail="1">TA03</stat>
+<stat pass="1" fail="0">TA04</stat>
+<stat pass="0" fail="1">TA06</stat>
+<stat pass="1" fail="0">TA12</stat>
+<stat pass="1" fail="0">TA16</stat>
+<stat pass="1" fail="0">TA17</stat>
+<stat pass="0" fail="3">TNR</stat>
+</tag>
+<suite>
+<stat pass="7" fail="6" id="s1" name="Automation B2C">Automation B2C</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

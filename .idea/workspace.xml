@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72060198-866e-4fe9-87bc-da11dab61295" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObject/Variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/Variable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObject/locator.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/locator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ressource/inscriptionOM.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource/inscriptionOM.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029453/formulaire_inscription_om_original.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029453/monfichier.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource/keyword_FormulaireOM.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029453/monfichier.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource/keyword_PageDacces.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029489/formulaire_inscription_om_original.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029489/monfichier.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource/keyword_assistance.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029489/monfichier.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource/keyword_fibre.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029514/formulaire_inscription_om_original.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029514/monfichier.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource/keyword_illimix.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/downloads_1584029514/monfichier.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource/keyword_recherche.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Result/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Result/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Result/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSuite/automation_b2c.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuite/automation_b2c.robot" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Y1bFajMVlzA34CuXFRIiIDXMBG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Developpement\RobotFramework\Portail\Resources\PO" />
+      <recent name="C:\Developpement\RobotFramework\Portail\Tests" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72060198-866e-4fe9-87bc-da11dab61295" name="Default Changelist" comment="" />
+      <created>1582112944615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582112944615</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583166164763">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583166164763" />
+    <state x="380" y="150" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583407860185">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="380" y="150" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1583407860185" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1585130515227">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1585130515227" />
+    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1583495333797">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583495333797" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1583340143328">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583340143328" />
+    <state x="311" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583340082872">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="311" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1583340082872" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1583340247054">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1583340247054" />
+  </component>
+</project>
