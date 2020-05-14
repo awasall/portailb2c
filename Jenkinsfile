@@ -1,6 +1,6 @@
 pipeline {
   agent {
-      label 'Linux'
+      label 'qatest'
   }
  
   stages {
@@ -9,6 +9,7 @@ pipeline {
 	        sh 'echo "PATH= ${PATH}'
 	      }
 	    }
+        
     
 	    stage('Run Robot Tests') {
 	      steps {
